@@ -45,6 +45,36 @@
 // })();
 // ================================================================
 
+// // const Twit = require('twit');
+// const Twitter = require('Twitter');
+// require('dotenv').config();
+
+// var client = new Twitter({
+//   consumer_key: process.env.consumer_key,
+//   consumer_secret: process.env.consumer_secret,
+//   access_token_key: process.env.access_token_key,
+//   access_token_secret: process.env.access_token_secret,
+// });
+
+// // GET recent tweets
+// (async () => {
+//   client.get(
+//     'users/show',
+//     { user_id: '4QRhOGvNjYMlctZgI1a3uSNeyv02', screen_name: 'AFozlol' },
+//     function (err, data, response) {
+//       //   const tweets = data;
+//       // const tweets = data.statuses;
+//       // const tweets = data.statuses.map((tweet) => tweet.text);
+//       //   const tweets = data.statuses.filter((tweet) =>
+//       //     tweet.text.toLowerCase().includes('elon')
+//       //   );
+//       console.log(data);
+//     }
+//   );
+// })();
+
+// =============================================
+
 // const Twit = require('twit');
 const Twitter = require('Twitter');
 require('dotenv').config();
@@ -59,7 +89,7 @@ var client = new Twitter({
 // GET recent tweets
 (async () => {
   client.get(
-    'users/show',
+    'users/lookup',
     { user_id: '4QRhOGvNjYMlctZgI1a3uSNeyv02', screen_name: 'AFozlol' },
     function (err, data, response) {
       //   const tweets = data;
@@ -72,5 +102,3 @@ var client = new Twitter({
     }
   );
 })();
-
-// t - > 7:49

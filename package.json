@@ -9,9 +9,16 @@
     "monitor": "node TwitterMonitoring/index.js",
     "tweet": "node tweetOnBehalfUser/index.js",
     "timeline": "node timeline/index.js",
+    "random": "node random/index.js",
+    "userTimeline": "node timeline/app.js",
     "user": "node user/index.js",
+    "retwitters": "node retwitters/index.js",
+    "likers": "node likers/index.js",
     "listTweets": "node user/listTweets.js",
-    "start": "node index.js"
+    "repliers": "node repliers/index.js",
+    "start": "node index.js",
+    "haha": "node haha.js",
+    "rough": "nodemon rough.js"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +36,7 @@
     "twit": "^2.2.11",
     "twitter": "^1.7.1",
     "twitter-api-v2": "^1.12.3",
-    "twitter-lite": "^1.1.0"
+    "twitter-lite": "^1.1.0",
+    "twitter-v2": "^1.1.0"
   }
 }
