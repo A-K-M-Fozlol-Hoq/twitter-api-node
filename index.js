@@ -62,7 +62,7 @@ function extractEmails(text) {
   return text.match(/([a-zA-Z0-9._+-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
 }
 let totalExtraUser = 0;
-
+let scrappedUsers = 0;
 // GET recent tweets
 (async () => {
   client.get(
@@ -91,10 +91,13 @@ let totalExtraUser = 0;
         ],
       }).then((response) => {
         // console.log(response.data);
-        response.data.map(async (data) => {
+        response.data.map(async (data, index) => {
+          scrappedUsers += 1;
           const url = data.entities?.url?.urls[0].display_url;
           const description = data.description;
           if (data.description?.includes('@')) {
+            scrappedUsers -= 1;
+            let newScrappedUsers = 0;
             // console.log(
             //   data.description,
             //   'this is the bio of ----->',
@@ -111,6 +114,14 @@ let totalExtraUser = 0;
             namerAtDescriptions.map(async (name) => {
               console.log('work with this id now ---->', name);
               totalExtraUser += 1;
+              try {
+                const resp = await client.get('users/lookup', {
+                  screen_name: name,
+                });
+                console.log(resp);
+              } catch (err) {
+                console.log(err, 'error of this user', name);
+              }
               client.get(
                 'users/lookup',
                 { screen_name: name },
@@ -210,6 +221,11 @@ let totalExtraUser = 0;
                       // sendMail(email3);
                     }
                   }
+
+                  newScrappedUsers += 1;
+                  if (newScrappedUsers - 1 === namerAtDescriptions.length) {
+                    scrappedUsers += 1;
+                  }
                 }
               );
             });
@@ -299,13 +315,16 @@ let totalExtraUser = 0;
             // sendMail(email2);
             // sendMail(email3);
           }
+          console.log(scrappedUsers === response.data.length);
+          if (scrappedUsers === response.data.length) {
+            csvWriter
+              .writeRecords(records) // returns a promise
+              .then(() => {
+                console.log('...Done');
+                console.log('totalExtraUser -->', totalExtraUser);
+              });
+          }
         });
-        csvWriter
-          .writeRecords(records) // returns a promise
-          .then(() => {
-            console.log('...Done');
-            console.log('totalExtraUser -->', totalExtraUser);
-          });
       });
     }
   );
