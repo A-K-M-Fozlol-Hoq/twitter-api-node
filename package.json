@@ -11,7 +11,11 @@
     "timeline": "node timeline/index.js",
     "user": "node user/index.js",
     "listTweets": "node user/listTweets.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "node test.js",
+    "email": "node email.js",
+    "csv": "node csv.js"
   },
   "keywords": [],
   "author": "",
@@ -19,16 +23,22 @@
   "dependencies": {
     "axios": "^0.27.2",
     "cron": "^2.1.0",
+    "csv-writer": "^1.6.0",
+    "deep-email-validator": "^0.1.21",
     "dotenv": "^16.0.1",
+    "email-validator": "^2.0.4",
     "express": "^4.18.1",
     "needle": "^3.1.0",
     "node-notifier": "^10.0.1",
+    "nodemailer": "^6.8.0",
     "nodemon": "^2.0.19",
     "open": "^8.4.0",
     "request": "^2.88.2",
+    "requests": "^0.3.0",
     "twit": "^2.2.11",
     "twitter": "^1.7.1",
     "twitter-api-v2": "^1.12.3",
-    "twitter-lite": "^1.1.0"
+    "twitter-lite": "^1.1.0",
+    "twitter-v2": "^1.1.0"
   }
 }
