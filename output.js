@@ -1,22 +1,25 @@
 const validate = require('deep-email-validator');
 const fs = require('fs');
 
-fs.readFile('email.csv', 'utf8', async function (err, data) {
+fs.readFile('email.csv', 'utf8', async function (err, CSVData) {
   /* parse data */
-  const emails = data.split('\n');
+  const data = CSVData.split('\n');
   const validEmails = [];
   const invalidEmails = [];
-  const a = emails.map(async (email) => {
+  const a = data.map(async (d) => {
+    const email = d.split(',')[0];
+    const screen_api = d.split(',')[1];
     let res = await validate.validate(email);
     res.email = email;
-    console.log(res.valid);
+    res.screen_api = screen_api;
+    // console.log(res.valid);
     if (res.valid) {
       validEmails.push(res);
     } else {
       invalidEmails.push(res);
     }
     console.log(
-      `total valid emails: ${validEmails.length} and total invalid emails: ${invalidEmails.length} and total emails are ${emails.length}`
+      `total valid emails: ${validEmails.length} and total invalid emails: ${invalidEmails.length} and total emails are ${data.length}`
     );
   });
   const b = await Promise.all(a);

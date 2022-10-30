@@ -15,7 +15,10 @@ var validator = require('email-validator');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const csvWriter = createCsvWriter({
   path: 'email.csv',
-  header: [{ id: 'email', title: 'EMAIL' }],
+  header: [
+    { id: 'email', title: 'EMAIL' },
+    { id: 'screen_api', title: 'Screen API' },
+  ],
 });
 const records = [];
 
@@ -78,7 +81,8 @@ let lastIdToScrap = '';
     'users/show',
     // { screen_name: 'AFozlol', include_entities: false },
     // { screen_name: 'zawwadx', include_entities: false },
-    { screen_name: 'FirstX_ai', include_entities: false },
+    // { screen_name: 'FirstX_ai', include_entities: false },
+    { screen_name: 'officialpbuster', include_entities: false },
     // { screen_name: 'Solidinbox', include_entities: false },
     async function (err, data, response) {
       await TwitterV2.get(`users/${data.id_str}/followers`, {
@@ -104,12 +108,14 @@ let lastIdToScrap = '';
         response.data.map(async (data, index) => {
           // console.log(data);
           const name = data.name;
+          const nameOfFirstProfile = name;
           let firstName = name.split(' ')[0] || '';
           let lastName = name.split(' ')[1] || '';
           let totalSampleEmail = 0;
           let emailFound = false;
           const userName = data.username;
           let email = '';
+
           if (data.description?.includes('@')) {
             // console.log(
             //   data.description,
@@ -126,11 +132,12 @@ let lastIdToScrap = '';
                 namerAtDescriptions.push(nameToPush);
               }
             });
-            namerAtDescriptions.map(async (name) => {
-              if (name) {
+
+            namerAtDescriptions.map(async (nameAtDesc) => {
+              if (nameAtDesc) {
                 extraUserExist = true;
-                console.log('work with this id now ---->', name);
-                lastIdToScrap = name;
+                console.log('work with this id now ---->', nameAtDesc);
+                lastIdToScrap = nameAtDesc;
                 totalExtraUser += 1;
                 // try {
                 //   const resp = await client.get('users/lookup', {
@@ -142,11 +149,12 @@ let lastIdToScrap = '';
                 // }
                 client.get(
                   'users/lookup',
-                  { screen_name: name },
+                  { screen_name: nameAtDesc },
                   // { screen_name: 'zawwadx' },
                   function (err, userData, response) {
                     if (userData[0]) {
                       // console.log('userData starts here');
+
                       const data = userData[0];
                       const urlArray = [];
                       const urlArray1 = data.entities?.url?.urls || [];
@@ -167,6 +175,7 @@ let lastIdToScrap = '';
                       const description = data.description;
                       const name = data.name;
                       const screen_name = data.screen_name;
+
                       // console.log(
                       //   'url = ' + url + '; description = ' + description,
                       //   '; name = ' + name
@@ -184,7 +193,10 @@ let lastIdToScrap = '';
                         // sendMail(emails[0]);
                         const isEmailValid = validator.validate(emails[0]);
                         if (isEmailValid) {
-                          records.push({ email: emails[0] });
+                          records.push({
+                            email: emails[0],
+                            screen_api: data.screen_name,
+                          });
                           emailFound = true;
                           email = emails[0];
                         }
@@ -212,7 +224,10 @@ let lastIdToScrap = '';
                             const isEmailValid = validator.validate(email1);
                             if (isEmailValid) {
                               // console.log('email 1 of 1 --->', email1);
-                              records.push({ email: email1 });
+                              records.push({
+                                email: email1,
+                                screen_api: data.screen_name,
+                              });
                               // sendMail(email1);
                             }
                           }
@@ -220,12 +235,32 @@ let lastIdToScrap = '';
 
                         if (firstName) {
                           totalSampleEmail = 1;
-                        }
-
-                        if (firstName && lastName) {
+                        } else if (firstName && lastName) {
                           totalSampleEmail = 3;
                         }
-                        if (totalSampleEmail === 1 && company && extension) {
+                        if (nameAtDesc === 'Apollo1HQ') {
+                          console.log(
+                            'firstName',
+                            firstName,
+                            'lastName->',
+                            lastName,
+                            'screen_name=>',
+                            screen_name,
+                            'name->',
+                            name,
+                            'company->',
+                            company,
+                            'extension->',
+                            extension,
+                            'length',
+                            nameOfFirstProfile.split(' ').length
+                          );
+                        }
+                        if (
+                          nameOfFirstProfile.split(' ').length === 1 &&
+                          company &&
+                          extension
+                        ) {
                           const cleanExtension = extension.includes('/')
                             ? extension.split('/')[0]
                             : extension;
@@ -234,13 +269,18 @@ let lastIdToScrap = '';
                             const isEmailValid = validator.validate(email1);
                             if (isEmailValid) {
                               // console.log('email 1 of 1 --->', email1);
-                              records.push({ email: email1 });
+                              records.push({
+                                email: email1,
+                                screen_api: data.screen_name,
+                              });
                               // sendMail(email1);
                             }
                           }
-                        }
-
-                        if (totalSampleEmail === 3 && company && extension) {
+                        } else if (
+                          nameOfFirstProfile.split(' ').length === 2 &&
+                          company &&
+                          extension
+                        ) {
                           const cleanExtension = extension.includes('/')
                             ? extension.split('/')[0]
                             : extension;
@@ -252,16 +292,22 @@ let lastIdToScrap = '';
                             const isEmail2Valid = validator.validate(email2);
                             const isEmail3Valid = validator.validate(email3);
                             if (isEmail1Valid) {
-                              records.push({ email: email1 });
+                              records.push({
+                                email: email1,
+                                screen_api: data.screen_name,
+                              });
                             }
                             if (isEmail2Valid) {
-                              records.push({ email: email2 });
+                              records.push({
+                                email: email2,
+                                screen_api: data.screen_name,
+                              });
                             }
                             if (isEmail3Valid) {
-                              records.push({ email: email3 });
-                            }
-                            if (name === 'Apollo1HQ') {
-                              console.log(email1, email2, email3, 'Apollo1HQ');
+                              records.push({
+                                email: email3,
+                                screen_api: data.screen_name,
+                              });
                             }
                           }
 
@@ -272,6 +318,60 @@ let lastIdToScrap = '';
                           // sendMail(email1);
                           // sendMail(email2);
                           // sendMail(email3);
+                        } else if (
+                          nameOfFirstProfile.split(' ').length === 3 &&
+                          company &&
+                          extension
+                        ) {
+                          const cleanExtension = extension.includes('/')
+                            ? extension.split('/')[0]
+                            : extension;
+                          if (cleanExtension) {
+                            const first_name = name.split(' ')[0];
+                            const last_name = name.split(' ')[2];
+                            const email1 = `${first_name}@${company}.${cleanExtension}`;
+                            const email2 = `${last_name}@${company}.${cleanExtension}`;
+                            const email3 = `${first_name}.${last_name}@${company}.${cleanExtension}`;
+                            const isEmail1Valid = validator.validate(email1);
+                            const isEmail2Valid = validator.validate(email2);
+                            const isEmail3Valid = validator.validate(email3);
+                            if (nameAtDesc === 'Apollo1HQ') {
+                              console.log(
+                                'first_name',
+                                first_name,
+                                'last_name->',
+                                last_name,
+                                'email1=>',
+                                email1,
+                                'email2->',
+                                email2,
+                                'email3->',
+                                email3,
+                                'email3->',
+                                extension,
+                                'length',
+                                nameOfFirstProfile.split(' ').length
+                              );
+                            }
+                            if (isEmail1Valid) {
+                              records.push({
+                                email: email1,
+                                screen_api: data.username,
+                              });
+                            }
+                            if (isEmail2Valid) {
+                              records.push({
+                                email: email2,
+                                screen_api: data.username,
+                              });
+                            }
+                            if (isEmail3Valid) {
+                              records.push({
+                                email: email3,
+                                screen_api: data.username,
+                              });
+                            }
+                          }
                         }
                         if (
                           screen_name.toLowerCase() ===
@@ -308,7 +408,7 @@ let lastIdToScrap = '';
             // sendMail(emails[0]);
             const isEmailValid = validator.validate(emails[0]);
             if (isEmailValid) {
-              records.push({ email: emails[0] });
+              records.push({ email: emails[0], screen_api: data.username });
               emailFound = true;
               email = emails[0];
             }
@@ -351,7 +451,7 @@ let lastIdToScrap = '';
                 const isEmailValid = validator.validate(email1);
                 if (isEmailValid) {
                   // console.log('email 1 of 1 --->', email1);
-                  records.push({ email: email1 });
+                  records.push({ email: email1, screen_api: data.username });
                   // sendMail(email1);
                 }
               }
@@ -363,7 +463,7 @@ let lastIdToScrap = '';
             if (firstName && lastName) {
               totalSampleEmail = 3;
             }
-            if (totalSampleEmail === 1 && company && extension) {
+            if (name.split(' ').length === 1 && company && extension) {
               const cleanExtension = extension.includes('/')
                 ? extension.split('/')[0]
                 : extension;
@@ -372,13 +472,11 @@ let lastIdToScrap = '';
                 const isEmailValid = validator.validate(email1);
                 if (isEmailValid) {
                   // console.log('email 1 of 1 --->', email1);
-                  records.push({ email: email1 });
+                  records.push({ email: email1, screen_api: data.username });
                   // sendMail(email1);
                 }
               }
-            }
-
-            if (totalSampleEmail === 3 && company && extension) {
+            } else if (name.split(' ').length === 2 && company && extension) {
               const cleanExtension = extension.includes('/')
                 ? extension.split('/')[0]
                 : extension;
@@ -390,13 +488,13 @@ let lastIdToScrap = '';
                 const isEmail2Valid = validator.validate(email2);
                 const isEmail3Valid = validator.validate(email3);
                 if (isEmail1Valid) {
-                  records.push({ email: email1 });
+                  records.push({ email: email1, screen_api: data.username });
                 }
                 if (isEmail2Valid) {
-                  records.push({ email: email2 });
+                  records.push({ email: email2, screen_api: data.username });
                 }
                 if (isEmail3Valid) {
-                  records.push({ email: email3 });
+                  records.push({ email: email3, screen_api: data.username });
                 }
               }
 
@@ -407,6 +505,29 @@ let lastIdToScrap = '';
               // sendMail(email1);
               // sendMail(email2);
               // sendMail(email3);
+            } else if (name.split(' ').length === 3 && company && extension) {
+              const cleanExtension = extension.includes('/')
+                ? extension.split('/')[0]
+                : extension;
+              if (cleanExtension) {
+                const first_name = name.split(' ')[0];
+                const last_name = name.split(' ')[2];
+                const email1 = `${first_name}@${company}.${cleanExtension}`;
+                const email2 = `${last_name}@${company}.${cleanExtension}`;
+                const email3 = `${first_name}.${last_name}@${company}.${cleanExtension}`;
+                const isEmail1Valid = validator.validate(email1);
+                const isEmail2Valid = validator.validate(email2);
+                const isEmail3Valid = validator.validate(email3);
+                if (isEmail1Valid) {
+                  records.push({ email: email1, screen_api: data.username });
+                }
+                if (isEmail2Valid) {
+                  records.push({ email: email2, screen_api: data.username });
+                }
+                if (isEmail3Valid) {
+                  records.push({ email: email3, screen_api: data.username });
+                }
+              }
             }
             /*
           csvWriter
@@ -435,7 +556,7 @@ let lastIdToScrap = '';
         csvWriter
           .writeRecords(records) // returns a promise
           .then(() => {
-            console.log('...Done');
+            console.log('Done...');
             console.log('totalExtraUser -->', totalExtraUser);
           });
       }, 5000);
