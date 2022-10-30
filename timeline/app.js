@@ -46,7 +46,8 @@ var client = new Twitter({
 (async () => {
   client.get(
     'users/lookup',
-    { screen_name: 'searchzakir' },
+    // { screen_name: 'searchzakir' },
+    { screen_name: 'kenyarmosh' },
     // { user_id: 'NpZEIUw9RBXYZMiNgd5bUY4otCB2', screen_name: 'zawwadx' },
     // { user_id: '4QRhOGvNjYMlctZgI1a3uSNeyv02', screen_name: 'AFozlol' },
     // { user_id: 'ze2yaXChk8Xvoers6vbq1h35sP53', screen_name: 'FoysalBN' },

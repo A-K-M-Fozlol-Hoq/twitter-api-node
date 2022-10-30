@@ -77,7 +77,8 @@ let lastIdToScrap = '';
   client.get(
     'users/show',
     // { screen_name: 'AFozlol', include_entities: false },
-    { screen_name: 'zawwadx', include_entities: false },
+    // { screen_name: 'zawwadx', include_entities: false },
+    { screen_name: 'FirstX_ai', include_entities: false },
     // { screen_name: 'Solidinbox', include_entities: false },
     async function (err, data, response) {
       await TwitterV2.get(`users/${data.id_str}/followers`, {
@@ -147,7 +148,22 @@ let lastIdToScrap = '';
                     if (userData[0]) {
                       // console.log('userData starts here');
                       const data = userData[0];
-                      const url = data.entities?.url?.urls[0]?.display_url;
+                      const urlArray = [];
+                      const urlArray1 = data.entities?.url?.urls || [];
+                      const urlArray1Length =
+                        data.entities?.url?.urls?.length || 0;
+                      const urlArray2 = data.entities?.description?.urls || [];
+                      const urlArray2Length =
+                        data.entities?.description?.urls?.length || 0;
+                      for (let i = 0; i < urlArray1Length; i++) {
+                        urlArray.push(urlArray1[i]?.display_url);
+                      }
+
+                      for (let i = 0; i < urlArray2Length; i++) {
+                        urlArray.push(urlArray2[i]?.display_url);
+                      }
+                      const totalUrl = urlArray.length;
+                      let url = '';
                       const description = data.description;
                       const name = data.name;
                       const screen_name = data.screen_name;
@@ -173,112 +189,110 @@ let lastIdToScrap = '';
                           email = emails[0];
                         }
                       }
-                      let company = '';
-                      let extension = '';
+                      for (let i = 0; i < totalUrl; i++) {
+                        url = urlArray[i];
 
-                      try {
-                        if (url) {
-                          company = url.split('.')[0];
-                          extension = url.split('.')[1];
+                        let company = '';
+                        let extension = '';
+
+                        try {
+                          if (url) {
+                            company = url.split('.')[0];
+                            extension = url.split('.')[1];
+                          }
+                        } catch (e) {
+                          console.log('error');
                         }
-                      } catch (e) {
-                        console.log('error');
-                      }
-                      if (screen_name) {
-                        const cleanExtension = extension.includes('/')
-                          ? extension.split('/')[0]
-                          : extension;
-                        if (cleanExtension) {
-                          const email1 = `${screen_name}@${company}.${extension}`;
-                          const isEmailValid = validator.validate(email1);
-                          if (isEmailValid) {
-                            // console.log('email 1 of 1 --->', email1);
-                            records.push({ email: email1 });
-                            // sendMail(email1);
-                          }
-                        }
-                      }
-
-                      if (firstName) {
-                        totalSampleEmail = 1;
-                      }
-
-                      if (firstName && lastName) {
-                        totalSampleEmail = 3;
-                      }
-                      if (totalSampleEmail === 1 && company && extension) {
-                        const cleanExtension = extension.includes('/')
-                          ? extension.split('/')[0]
-                          : extension;
-                        if (cleanExtension) {
-                          const email1 = `${firstName}@${company}.${extension}`;
-                          const isEmailValid = validator.validate(email1);
-                          if (isEmailValid) {
-                            // console.log('email 1 of 1 --->', email1);
-                            records.push({ email: email1 });
-                            // sendMail(email1);
-                          }
-                        }
-                      }
-
-                      if (totalSampleEmail === 3 && company && extension) {
-                        const cleanExtension = extension.includes('/')
-                          ? extension.split('/')[0]
-                          : extension;
-                        if (cleanExtension) {
-                          const email1 = `${firstName}@${company}.${cleanExtension}`;
-                          const email2 = `${lastName}@${company}.${cleanExtension}`;
-                          const email3 = `${firstName}.${lastName}@${company}.${cleanExtension}`;
-                          const isEmail1Valid = validator.validate(email1);
-                          const isEmail2Valid = validator.validate(email2);
-                          const isEmail3Valid = validator.validate(email3);
-                          if (isEmail1Valid) {
-                            records.push({ email: email1 });
-                          }
-                          if (isEmail2Valid) {
-                            records.push({ email: email2 });
-                          }
-                          if (isEmail3Valid) {
-                            records.push({ email: email3 });
-                          }
-                          if (name === 'Apollo1HQ') {
-                            console.log(email1, email2, email3, 'Apollo1HQ');
+                        if (screen_name) {
+                          const cleanExtension = extension.includes('/')
+                            ? extension.split('/')[0]
+                            : extension;
+                          if (cleanExtension) {
+                            const email1 = `${screen_name}@${company}.${extension}`;
+                            const isEmailValid = validator.validate(email1);
+                            if (isEmailValid) {
+                              // console.log('email 1 of 1 --->', email1);
+                              records.push({ email: email1 });
+                              // sendMail(email1);
+                            }
                           }
                         }
 
-                        // console.log('email 1 of 3 --->', email1);
-                        // console.log('email 2 of 3 --->', email2);
-                        // console.log('email 3 of 3 --->', email3);
+                        if (firstName) {
+                          totalSampleEmail = 1;
+                        }
 
-                        // sendMail(email1);
-                        // sendMail(email2);
-                        // sendMail(email3);
+                        if (firstName && lastName) {
+                          totalSampleEmail = 3;
+                        }
+                        if (totalSampleEmail === 1 && company && extension) {
+                          const cleanExtension = extension.includes('/')
+                            ? extension.split('/')[0]
+                            : extension;
+                          if (cleanExtension) {
+                            const email1 = `${firstName}@${company}.${extension}`;
+                            const isEmailValid = validator.validate(email1);
+                            if (isEmailValid) {
+                              // console.log('email 1 of 1 --->', email1);
+                              records.push({ email: email1 });
+                              // sendMail(email1);
+                            }
+                          }
+                        }
+
+                        if (totalSampleEmail === 3 && company && extension) {
+                          const cleanExtension = extension.includes('/')
+                            ? extension.split('/')[0]
+                            : extension;
+                          if (cleanExtension) {
+                            const email1 = `${firstName}@${company}.${cleanExtension}`;
+                            const email2 = `${lastName}@${company}.${cleanExtension}`;
+                            const email3 = `${firstName}.${lastName}@${company}.${cleanExtension}`;
+                            const isEmail1Valid = validator.validate(email1);
+                            const isEmail2Valid = validator.validate(email2);
+                            const isEmail3Valid = validator.validate(email3);
+                            if (isEmail1Valid) {
+                              records.push({ email: email1 });
+                            }
+                            if (isEmail2Valid) {
+                              records.push({ email: email2 });
+                            }
+                            if (isEmail3Valid) {
+                              records.push({ email: email3 });
+                            }
+                            if (name === 'Apollo1HQ') {
+                              console.log(email1, email2, email3, 'Apollo1HQ');
+                            }
+                          }
+
+                          // console.log('email 1 of 3 --->', email1);
+                          // console.log('email 2 of 3 --->', email2);
+                          // console.log('email 3 of 3 --->', email3);
+
+                          // sendMail(email1);
+                          // sendMail(email2);
+                          // sendMail(email3);
+                        }
+                        if (
+                          screen_name.toLowerCase() ===
+                          lastIdToScrap.toLowerCase()
+                        ) {
+                          console.log('after 1 second');
+                        }
+                        // if (
+                        //   screen_name.toLowerCase() ===
+                        //   lastIdToScrap.toLowerCase()
+                        // ) {
+                        //   setTimeout(function () {
+                        //     csvWriter
+                        //       .writeRecords(records) // returns a promise
+                        //       .then(() => {
+                        //         console.log('...Done');
+                        //         console.log('totalExtraUser -->', totalExtraUser);
+                        //       });
+                        //   }, 2000);
+                        // }
                       }
-                      console.log(
-                        screen_name.toLowerCase() ===
-                          lastIdToScrap.toLowerCase(),
-                        screen_name.toLowerCase(),
-                        lastIdToScrap.toLowerCase()
-                      );
-                      if (
-                        screen_name.toLowerCase() ===
-                        lastIdToScrap.toLowerCase()
-                      ) {
-                        console.log('after 1 second');
-                      }
-                      // if (
-                      //   screen_name.toLowerCase() ===
-                      //   lastIdToScrap.toLowerCase()
-                      // ) {
-                      //   setTimeout(function () {
-                      //     csvWriter
-                      //       .writeRecords(records) // returns a promise
-                      //       .then(() => {
-                      //         console.log('...Done');
-                      //         console.log('totalExtraUser -->', totalExtraUser);
-                      //       });
-                      //   }, 2000);
-                      // }
                     }
                   }
                 );
@@ -300,87 +314,101 @@ let lastIdToScrap = '';
             }
           }
 
-          const url = data.entities?.url?.urls[0].display_url;
-
-          let company = '';
-          let extension = '';
-
-          try {
-            if (url) {
-              company = url.split('.')[0];
-              extension = url.split('.')[1];
-            }
-          } catch (e) {
-            console.log('error');
+          const urlArray = [];
+          const urlArray1 = data.entities?.url?.urls || [];
+          const urlArray1Length = data.entities?.url?.urls?.length || 0;
+          const urlArray2 = data.entities?.description?.urls || [];
+          const urlArray2Length = data.entities?.description?.urls?.length || 0;
+          for (let i = 0; i < urlArray1Length; i++) {
+            urlArray.push(urlArray1[i]?.display_url);
           }
 
-          if (userName) {
-            const cleanExtension = extension.includes('/')
-              ? extension.split('/')[0]
-              : extension;
-            if (cleanExtension) {
-              const email1 = `${userName}@${company}.${extension}`;
-              const isEmailValid = validator.validate(email1);
-              if (isEmailValid) {
-                // console.log('email 1 of 1 --->', email1);
-                records.push({ email: email1 });
-                // sendMail(email1);
+          for (let i = 0; i < urlArray2Length; i++) {
+            urlArray.push(urlArray2[i]?.display_url);
+          }
+          const totalUrl = urlArray.length;
+          let url = '';
+          for (let i = 0; i < totalUrl; i++) {
+            url = urlArray[i];
+            let company = '';
+            let extension = '';
+
+            try {
+              if (url) {
+                company = url.split('.')[0];
+                extension = url.split('.')[1];
               }
+            } catch (e) {
+              console.log('error');
             }
-          }
-          if (firstName) {
-            totalSampleEmail = 1;
-          }
 
-          if (firstName && lastName) {
-            totalSampleEmail = 3;
-          }
-          if (totalSampleEmail === 1 && company && extension) {
-            const cleanExtension = extension.includes('/')
-              ? extension.split('/')[0]
-              : extension;
-            if (cleanExtension) {
-              const email1 = `${firstName}@${company}.${extension}`;
-              const isEmailValid = validator.validate(email1);
-              if (isEmailValid) {
-                // console.log('email 1 of 1 --->', email1);
-                records.push({ email: email1 });
-                // sendMail(email1);
+            if (userName) {
+              const cleanExtension = extension.includes('/')
+                ? extension.split('/')[0]
+                : extension;
+              if (cleanExtension) {
+                const email1 = `${userName}@${company}.${extension}`;
+                const isEmailValid = validator.validate(email1);
+                if (isEmailValid) {
+                  // console.log('email 1 of 1 --->', email1);
+                  records.push({ email: email1 });
+                  // sendMail(email1);
+                }
               }
             }
-          }
+            if (firstName) {
+              totalSampleEmail = 1;
+            }
 
-          if (totalSampleEmail === 3 && company && extension) {
-            const cleanExtension = extension.includes('/')
-              ? extension.split('/')[0]
-              : extension;
-            if (cleanExtension) {
-              const email1 = `${firstName}@${company}.${cleanExtension}`;
-              const email2 = `${lastName}@${company}.${cleanExtension}`;
-              const email3 = `${firstName}.${lastName}@${company}.${cleanExtension}`;
-              const isEmail1Valid = validator.validate(email1);
-              const isEmail2Valid = validator.validate(email2);
-              const isEmail3Valid = validator.validate(email3);
-              if (isEmail1Valid) {
-                records.push({ email: email1 });
-              }
-              if (isEmail2Valid) {
-                records.push({ email: email2 });
-              }
-              if (isEmail3Valid) {
-                records.push({ email: email3 });
+            if (firstName && lastName) {
+              totalSampleEmail = 3;
+            }
+            if (totalSampleEmail === 1 && company && extension) {
+              const cleanExtension = extension.includes('/')
+                ? extension.split('/')[0]
+                : extension;
+              if (cleanExtension) {
+                const email1 = `${firstName}@${company}.${extension}`;
+                const isEmailValid = validator.validate(email1);
+                if (isEmailValid) {
+                  // console.log('email 1 of 1 --->', email1);
+                  records.push({ email: email1 });
+                  // sendMail(email1);
+                }
               }
             }
 
-            // console.log('email 1 of 3 --->', email1);
-            // console.log('email 2 of 3 --->', email2);
-            // console.log('email 3 of 3 --->', email3);
+            if (totalSampleEmail === 3 && company && extension) {
+              const cleanExtension = extension.includes('/')
+                ? extension.split('/')[0]
+                : extension;
+              if (cleanExtension) {
+                const email1 = `${firstName}@${company}.${cleanExtension}`;
+                const email2 = `${lastName}@${company}.${cleanExtension}`;
+                const email3 = `${firstName}.${lastName}@${company}.${cleanExtension}`;
+                const isEmail1Valid = validator.validate(email1);
+                const isEmail2Valid = validator.validate(email2);
+                const isEmail3Valid = validator.validate(email3);
+                if (isEmail1Valid) {
+                  records.push({ email: email1 });
+                }
+                if (isEmail2Valid) {
+                  records.push({ email: email2 });
+                }
+                if (isEmail3Valid) {
+                  records.push({ email: email3 });
+                }
+              }
 
-            // sendMail(email1);
-            // sendMail(email2);
-            // sendMail(email3);
-          }
-          /*
+              // console.log('email 1 of 3 --->', email1);
+              // console.log('email 2 of 3 --->', email2);
+              // console.log('email 3 of 3 --->', email3);
+
+              // sendMail(email1);
+              // sendMail(email2);
+              // sendMail(email3);
+            }
+            /*
           csvWriter
               .writeRecords(records) // returns a promise
               .then(() => {
@@ -388,6 +416,7 @@ let lastIdToScrap = '';
                 console.log('totalExtraUser -->', totalExtraUser);
               });
                */
+          }
         });
       });
 
