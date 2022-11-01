@@ -1,0 +1,2365 @@
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Arts@shutterstock.com',
+  screen_api: 'Uniquevectorart'
+}
+2 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Unique@shutterstock.com',
+  screen_api: 'Uniquevectorart'
+}
+3 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Unique.Arts@shutterstock.com',
+  screen_api: 'Uniquevectorart'
+}
+4 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'alessiofancello@alessiofancello.com',
+  screen_api: 'alessiofancello'
+}
+5 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Anwaar@twitter.com',
+  screen_api: 'iAmAnWaarulHaq'
+}
+6 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Hinza@twitter.com',
+  screen_api: 'HinzaSajjad'
+}
+7 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'joannakurylo@joannakurylo.com',
+  screen_api: 'joannakurylo'
+}
+8 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Eloise@notionutopia.com',
+  screen_api: 'ElosNotion'
+}
+9 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Hinza.Sajjad@twitter.com',
+  screen_api: 'HinzaSajjad'
+}
+10 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Lfinecountry@gmail.com',
+  screen_api: 'L_Finecountry'
+}
+11 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Sajjad@twitter.com',
+  screen_api: 'HinzaSajjad'
+}
+12 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Joanna@joannakurylo.com',
+  screen_api: 'joannakurylo'
+}
+13 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Shann@lunarstrategy.com',
+  screen_api: 'shkcrypto'
+}
+14 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Tahir@github.com',
+  screen_api: 'balochtahir6'
+}
+15 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Friend@youtube.com',
+  screen_api: 'Friendin_law1'
+}
+16 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Tahir.Aslam@github.com',
+  screen_api: 'balochtahir6'
+}
+17 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Friend.law@youtube.com',
+  screen_api: 'Friendin_law1'
+}
+18 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Rachel@kallanderassociates.com',
+  screen_api: 'rachelkallander'
+}
+19 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Aslam@github.com',
+  screen_api: 'balochtahir6'
+}
+20 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Seguridad@youtube.com',
+  screen_api: 'dys_mx'
+}
+21 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'law@youtube.com',
+  screen_api: 'Friendin_law1'
+}
+22 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Nick@youtube.com',
+  screen_api: 'Press1ForNick'
+}
+23 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'ronan@ronanmccoy.com',
+  screen_api: 'ronanmccoy'
+}
+24 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Janette@resonatingbrands.com',
+  screen_api: 'be_resonating'
+}
+25 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'ronanmccoy@ronanmccoy.com',
+  screen_api: 'ronanmccoy'
+}
+26 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Levon.Photography@instagram.com',
+  screen_api: 'LevonPompa'
+}
+27 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Photography@instagram.com',
+  screen_api: 'LevonPompa'
+}
+28 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Levon@instagram.com',
+  screen_api: 'LevonPompa'
+}
+29 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Josh@huddle.works',
+  screen_api: 'JoshNaginewicz'
+}
+30 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Michelle@michelledeery.com',
+  screen_api: 'MichWriting'
+}
+31 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'denzelsuelto@gmail.com',
+  screen_api: 'iamdenzz'
+}
+32 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Daniel@homefans.net',
+  screen_api: 'DaVelasquez'
+}
+33 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'ADAM@question-generator.com',
+  screen_api: 'gregoryadam2'
+}
+34 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'madebyrenai@gmail.com',
+  screen_api: 'JPHaley100'
+}
+35 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Gregory@Question-generator.com',
+  screen_api: 'gregoryadam2'
+}
+36 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Vishal@instagram.com',
+  screen_api: 'ImVishalKoshtha'
+}
+37 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Sekhar@mymory.life',
+  screen_api: 'mspriyanshu'
+}
+38 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Nametrans.com@nametrans.com',
+  screen_api: 'nametrans'
+}
+39 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'mspriyanshu@mymory.life',
+  screen_api: 'mspriyanshu'
+}
+40 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Priyanshu.Sekhar@mymory.life',
+  screen_api: 'mspriyanshu'
+}
+41 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Matt@withkoji.com',
+  screen_api: 'mattlady'
+}
+42 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'ADAM@Question-generator.com',
+  screen_api: 'gregoryadam2'
+}
+43 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Julia@knowledgerecycled.com',
+  screen_api: 'juliakemp'
+}
+44 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Chaolin07@Crypto.com',
+  screen_api: 'Chaolin07'
+}
+45 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Arenas@github.com',
+  screen_api: 'antonioaren'
+}
+46 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Pedro@github.com',
+  screen_api: 'antonioaren'
+}
+47 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'gregoryadam2@question-generator.com',
+  screen_api: 'gregoryadam2'
+}
+48 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Pedro.Arenas@github.com',
+  screen_api: 'antonioaren'
+}
+49 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Gregory.ADAM@Question-generator.com',
+  screen_api: 'gregoryadam2'
+}
+50 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Courtney@timcourtney.net',
+  screen_api: 'timcourtney'
+}
+51 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'timcourtney@timcourtney.net',
+  screen_api: 'timcourtney'
+}
+52 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Chris@businessappraisalflorida.com',
+  screen_api: 'ccurtin1'
+}
+53 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Tim.Courtney@timcourtney.net',
+  screen_api: 'timcourtney'
+}
+54 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Yesi@youtube.com',
+  screen_api: 'silvercorp'
+}
+55 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Tim@timcourtney.net',
+  screen_api: 'timcourtney'
+}
+56 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'cesar@mindmaven.com',
+  screen_api: 'iamcesarromero'
+}
+57 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Gregory@question-generator.com',
+  screen_api: 'gregoryadam2'
+}
+58 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Gregory.ADAM@question-generator.com',
+  screen_api: 'gregoryadam2'
+}
+59 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Cyril.Catel@iadvize.com',
+  screen_api: 'CyrilCatel'
+}
+60 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'iamcesarromero@mindmaven.com',
+  screen_api: 'iamcesarromero'
+}
+61 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'MAMAHB@moneyandinvestment.net',
+  screen_api: 'ogbonna1977'
+}
+62 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Bryzer@inmotionmktg.com',
+  screen_api: 'Bryzer'
+}
+63 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Sebastian.Morales@4ptech.com',
+  screen_api: 'sealmori'
+}
+64 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Sebastian@4ptech.com',
+  screen_api: 'sealmori'
+}
+65 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'gregoryadam2@Question-generator.com',
+  screen_api: 'gregoryadam2'
+}
+66 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'ppalmer@ggasearch.com',
+  screen_api: 'paigepalmer'
+}
+67 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'scrintal@scrintal.com',
+  screen_api: 'scrintal'
+}
+68 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Mech.Orbit@mechorbit.com',
+  screen_api: 'mechorbit'
+}
+69 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'undefined@scrintal.com',
+  screen_api: ''
+}
+70 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Georges.Cosson@github.com',
+  screen_api: 'stressgc'
+}
+71 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Cosson@github.com',
+  screen_api: 'stressgc'
+}
+72 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Scrintal@scrintal.com',
+  screen_api: ''
+}
+73 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Georges@github.com',
+  screen_api: 'stressgc'
+}
+74 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'CXL@cxl.com',
+  screen_api: ''
+}
+75 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'undefined@cxl.com',
+  screen_api: ''
+}
+76 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Isaque@agryo.com',
+  screen_api: 'isaquedanielre'
+}
+77 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'CXL.undefined@cxl.com',
+  screen_api: ''
+}
+78 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Pedro.Ruiz@dataverz.net',
+  screen_api: 'parraguezr'
+}
+79 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Isaque@agryo.com',
+  screen_api: 'isaquedanielre'
+}
+80 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'parraguezr@dataverz.net',
+  screen_api: 'parraguezr'
+}
+81 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Ruiz@dataverz.net',
+  screen_api: 'parraguezr'
+}
+82 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Alex.Einhorn@hilinemerchandising.com',
+  screen_api: 'hilinemerch'
+}
+83 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'robert@stunningdigitalmarketing.com',
+  screen_api: 'RobCairns'
+}
+84 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Leunig@leunig.net',
+  screen_api: 'aleunig'
+}
+85 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Rachel@kallanderassociates.com',
+  screen_api: 'KallanderAssoc'
+}
+86 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Pedro@dataverz.net',
+  screen_api: 'parraguezr'
+}
+87 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Nick.Abouzeid@ramp.com',
+  screen_api: 'tryramp'
+}
+88 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Abouzeid@ramp.com',
+  screen_api: 'tryramp'
+}
+89 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Daniel@homefans.net',
+  screen_api: 'HomefansSports'
+}
+90 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Nick@ramp.com',
+  screen_api: 'tryramp'
+}
+91 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Nick@ramp.com',
+  screen_api: 'tryramp'
+}
+92 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Abouzeid@ramp.com',
+  screen_api: 'tryramp'
+}
+93 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Kevin.Bouasy@executivesurf.com',
+  screen_api: 'kevin_bouasy'
+}
+94 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Kevin.Bouasy@executivesurf.com',
+  screen_api: 'ExecutiveSurf'
+}
+95 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Nick.Abouzeid@ramp.com',
+  screen_api: 'tryramp'
+}
+96 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Rachel@ArcticEncounter.com',
+  screen_api: 'AESymposium'
+}
+97 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Andrew@leunig.net',
+  screen_api: 'aleunig'
+}
+98 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Andrew.Leunig@leunig.net',
+  screen_api: 'aleunig'
+}
+99 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'aleunig@leunig.net',
+  screen_api: 'aleunig'
+}
+100 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Rachel@thecordovatimes.com',
+  screen_api: 'thecordovatimes'
+}
+101 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Liaskas@thinkdesquared.com',
+  screen_api: 'LiaskasV'
+}
+102 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Manos.Mastorakis@oysterhr.com',
+  screen_api: 'HeyOyster'
+}
+103 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'AppsFlyer@appsflyer.com',
+  screen_api: 'AppsFlyer'
+}
+104 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Mohamed@shopify.com',
+  screen_api: 'Shopify'
+}
+105 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Josh@huddle.works',
+  screen_api: 'withhuddle'
+}
+106 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Shopify@shopify.com',
+  screen_api: 'Shopify'
+}
+107 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'QwickShifts@qwick.com',
+  screen_api: 'QwickShifts'
+}
+108 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Ammar.Mohamed@shopify.com',
+  screen_api: 'Shopify'
+}
+109 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Ammar@shopify.com',
+  screen_api: 'Shopify'
+}
+110 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Nick@mainstreet.com',
+  screen_api: 'MainStreet'
+}
+111 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Guillaume@phantombuster.com',
+  screen_api: 'guillaumeboiret'
+}
+112 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Guillaume.Boiret@phantombuster.com',
+  screen_api: 'guillaumeboiret'
+}
+113 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'ProductHunt@producthunt.com',
+  screen_api: 'ProductHunt'
+}
+114 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'ProductHunt@producthunt.com',
+  screen_api: 'ProductHunt'
+}
+115 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Moritz@edenspiekermann.com',
+  screen_api: 'edenspiekermann'
+}
+116 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Guth@edenspiekermann.com',
+  screen_api: 'edenspiekermann'
+}
+117 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'edenspiekermann@edenspiekermann.com',
+  screen_api: 'edenspiekermann'
+}
+118 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Moritz.Guth@edenspiekermann.com',
+  screen_api: 'edenspiekermann'
+}
+119 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Ellen@desklightlearning.com',
+  screen_api: 'EllenMuench1'
+}
+120 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Pete@aol.it',
+  screen_api: 'AOL'
+}
+121 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Eric@startuplessonslearned.com',
+  screen_api: ''
+}
+122 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'GoogleFR@google.fr',
+  screen_api: 'GoogleFR'
+}
+123 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Julia@knowledgerecycled.com',
+  screen_api: 'KRecycled'
+}
+124 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'DamienS@109innovation.com',
+  screen_api: 'DamienS'
+}
+125 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'fabian@docusign.com',
+  screen_api: 'FabianNgala'
+}
+126 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'ngala@docusign.com',
+  screen_api: 'FabianNgala'
+}
+127 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'FabianNgala@docusign.com',
+  screen_api: 'FabianNgala'
+}
+128 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'fabian.ngala@docusign.com',
+  screen_api: 'FabianNgala'
+}
+129 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'N_Titah@nailetitah.com',
+  screen_api: 'N_Titah'
+}
+130 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Raul.Krauthausen@sozialhelden.de',
+  screen_api: 'SOZIALHELDEN'
+}
+131 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Krauthausen@sozialhelden.de',
+  screen_api: 'SOZIALHELDEN'
+}
+132 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'InMotionMKTG@inmotionmktg.com',
+  screen_api: 'InMotionMKTG'
+}
+133 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Raul@sozialhelden.de',
+  screen_api: 'SOZIALHELDEN'
+}
+134 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Philips@inmotionmktg.com',
+  screen_api: 'InMotionMKTG'
+}
+135 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Philips@inmotionmktg.com',
+  screen_api: 'Bryzer'
+}
+136 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Marius.Ortiz@10h11.com',
+  screen_api: '10h11'
+}
+137 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'undefined@scrintal.com',
+  screen_api: ''
+}
+138 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'scrintal@scrintal.com',
+  screen_api: 'scrintal'
+}
+139 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Scrintal.undefined@scrintal.com',
+  screen_api: ''
+}
+140 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Scrintal.undefined@scrintal.com',
+  screen_api: ''
+}
+141 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'SuperTokens@github.com',
+  screen_api: ''
+}
+142 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'SuperTokens.undefined@github.com',
+  screen_api: ''
+}
+143 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Scrintal@scrintal.com',
+  screen_api: ''
+}
+144 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'AppsFlyer@appsflyer.com',
+  screen_api: ''
+}
+145 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'undefined@github.com',
+  screen_api: ''
+}
+146 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Vallely@qwick.com',
+  screen_api: 'QwickShifts'
+}
+147 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'AppsFlyer.undefined@appsflyer.com',
+  screen_api: ''
+}
+148 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'undefined@appsflyer.com',
+  screen_api: ''
+}
+149 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'H@hanzelgodinez.com',
+  screen_api: 'GodinezHanzel'
+}
+150 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'intercom@intercom.com',
+  screen_api: 'intercom'
+}
+151 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'michaelcolley@intercom.com',
+  screen_api: 'intercom'
+}
+152 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Bryan.Philips@inmotionmktg.com',
+  screen_api: 'InMotionMKTG'
+}
+153 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: '10h11@10h11.com',
+  screen_api: '10h11'
+}
+154 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Bryan@inmotionmktg.com',
+  screen_api: 'InMotionMKTG'
+}
+155 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Josh@signalbrandworks.com',
+  screen_api: 'josh_can'
+}
+156 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Bryan.Philips@inmotionmktg.com',
+  screen_api: 'Bryzer'
+}
+157 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Marius@10h11.com',
+  screen_api: '10h11'
+}
+158 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Bryan@inmotionmktg.com',
+  screen_api: 'Bryzer'
+}
+159 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Ortiz@10h11.com',
+  screen_api: '10h11'
+}
+160 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Cyril.Catel@iadvize.com',
+  screen_api: 'iAdvize_de'
+}
+161 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Titah@google.fr',
+  screen_api: 'GoogleFR'
+}
+162 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Peter@nzero.com',
+  screen_api: 'nzero_'
+}
+163 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Tyler.Vallely@qwick.com',
+  screen_api: 'QwickShifts'
+}
+164 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Ali@monkshill.com',
+  screen_api: 'monkshillvc'
+}
+165 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Tyler@qwick.com',
+  screen_api: 'QwickShifts'
+}
+166 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'edouard@kloviscalvados.com',
+  screen_api: 'Edouardtiem'
+}
+167 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Floris@zeronaut.be',
+  screen_api: 'florisvc'
+}
+168 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Kevin@aventusventures.com',
+  screen_api: 'AventusV'
+}
+169 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'patwhite70@ctvnews.ca',
+  screen_api: 'CTVNews'
+}
+170 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'CTVNews@ctvnews.ca',
+  screen_api: 'CTVNews'
+}
+171 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Alex@phillydrinkers.com',
+  screen_api: 'PhillyDrinkers'
+}
+172 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'patwhite70@CTVNews.ca',
+  screen_api: 'CTVNews'
+}
+173 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Alex@PhillyDrinkers.com',
+  screen_api: 'EinhornTweets'
+}
+174 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'CTVNews@CTVNews.ca',
+  screen_api: 'CTVNews'
+}
+175 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Justin@Helpwithyourhustle.com',
+  screen_api: 'BorgeClooney'
+}
+176 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Naliato@instagram.com',
+  screen_api: 'naliatob'
+}
+177 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Eithiriel@nicholeelizabethdemere.com',
+  screen_api: 'NikkiElizDemere'
+}
+178 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Victor.Baptista@facebook.com',
+  screen_api: 'victorbaptista'
+}
+179 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Skomoroch@aol.com',
+  screen_api: 'AOL'
+}
+180 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Pete@aol.com',
+  screen_api: 'AOL'
+}
+181 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Pete.Skomoroch@aol.com',
+  screen_api: 'AOL'
+}
+182 --->
+{
+  valid: true,
+  validators: {
+    regex: { valid: true },
+    typo: { valid: true },
+    disposable: { valid: true },
+    mx: { valid: true },
+    smtp: { valid: true }
+  },
+  email: 'Priyanshu@mymory.life',
+  screen_api: 'mspriyanshu'
+}
