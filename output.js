@@ -30,6 +30,9 @@ fs.readFile('email.csv', 'utf8', async function (err, CSVData) {
     // console.log(res.valid);
     if (res.valid) {
       validEmails.push(res);
+      records.push({
+        email: res.email,
+      });
     } else {
       invalidEmails.push(res);
     }
@@ -66,9 +69,6 @@ const execute = () => {
       outputAtScrapyBird.length
     );
     if (outputAtScrapyBird.includes(e3)) {
-      records.push({
-        email: e3,
-      });
       totalMatches += 1;
       console.log(`${index + 1} --->${email}`);
     }
